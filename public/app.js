@@ -1,9 +1,15 @@
 function totalMarks(){
-    totalMarks_individual = document.getElementsByClassName("total");
+    const totalMarks_individual = document.getElementsByClassName("total");
 
-    total_marks = null
+    let total_marks = null
     for(let i=0;i<totalMarks_individual.length;i++){
-        total_marks += totalMarks_individual[i]
+        total_marks += parseInt(totalMarks_individual[i].innerHTML)
+       
     }
-    console.log(total_marks)
+    window.alert(total_marks)
+}
+
+function leastMarks(){
+    const total_marks_individual = document.getElementsByClassName("total");
+    const total_marks_sorted = total_marks_individual.sort()
 }
