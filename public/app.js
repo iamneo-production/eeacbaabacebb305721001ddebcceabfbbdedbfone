@@ -13,11 +13,14 @@ function leastMarks(){
     const total_marks_individual = document.getElementsByClassName("total");
     const total_marks=[]
     for(let i=0;i<total_marks_individual.length;i++){
-        total_marks[i] = total_marks_individual[i].innerHTML
+        total_marks[i] = parseInt(total_marks_individual[i].innerHTML)
     
     }
 
-    let min_marks=Math.min()
-    
-    console.log(min_marks)
+    let min_marks=Math.min(...total_marks)
+    for(let i=0;i<total_marks_individual.length;i++){
+        if(parseInt(total_marks_individual[i].innerHTML) === min_marks){
+            document.getElementById(i+1).className = "yellow"
+        }
+    }
 }
