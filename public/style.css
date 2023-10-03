@@ -12,9 +12,20 @@ tr:nth-child(even){
     background-color: #f2f2f2;
 }
 
-.yellow{
+.highlight{
     background-color: yellow;
 }
 button{
-    pa
+    padding:5px;
+    border:none
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin:0
+}
+.container{
+    text-align: center;
 }

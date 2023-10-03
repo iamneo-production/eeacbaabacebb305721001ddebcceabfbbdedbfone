@@ -20,7 +20,7 @@ function leastMarks(){
     let min_marks=Math.min(...total_marks)
     for(let i=0;i<total_marks_individual.length;i++){
         if(parseInt(total_marks_individual[i].innerHTML) === min_marks){
-            document.getElementById(i+1).className = "yellow"
+            document.getElementById(i+1).className = "highlight"
         }
     }
 }
