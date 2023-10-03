@@ -10,6 +10,10 @@ function totalMarks(){
 }
 
 function leastMarks(){
-    const total_marks_individual = document.getElementsByClassName("total");
-    const total_marks_sorted = total_marks_individual.sort()
+    const total_marks_individual = document.getElementsByClassName("total").innerHTML;
+    const total_marks=[]
+    for(let i=0;i<total_marks_individual.length;i++){
+        total_marks[i] = total_marks_individual[i].innerHTML
+    }
+    console.log(Math.min(total_marks_individual))
 }
