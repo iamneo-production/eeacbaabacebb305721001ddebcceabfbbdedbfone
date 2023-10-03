@@ -13,13 +13,11 @@ function leastMarks(){
     const total_marks_individual = document.getElementsByClassName("total");
     const total_marks=[]
     for(let i=0;i<total_marks_individual.length;i++){
-        total_marks[i] = [total_marks_individual[i].innerHTML,i+1]
+        total_marks[i] = total_marks_individual[i].innerHTML
     
     }
-    console.log(total_marks)
 
-    const min_marks=[]
-    for(let i=1;i<total_marks.length;i++){
-        if(total_marks[i][0])
-    }
+    let min_marks=Math.min()
+    
+    console.log(min_marks)
 }
